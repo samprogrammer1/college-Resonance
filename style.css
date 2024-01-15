@@ -85,6 +85,30 @@ body{
     line-height: 64.17px;
     word-wrap: break-word
 }
+.titleHead {
+    color: #E33A19;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 48.13px;
+}
+
+#timer .clock-timer {
+    color: white;
+    font-size: 72px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+#timer .clock-head {
+    color: white;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
 
 
 @media (max-width: 990px)  {
@@ -93,5 +117,18 @@ body{
     }
     .navbar-nav .nav-link.active {
         color: var(--background-color) !important;
+    }
+}
+
+@media (max-width: 520px)  {
+    .titleHead {
+        font-size: 22px;
+        margin-bottom: 0px !important;
+    }
+    #timer .clock-timer {
+        font-size: 35px;
+    }
+    #timer .clock-head {
+        font-size: 10px;
     }
 }
