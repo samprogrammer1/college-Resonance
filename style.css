@@ -128,28 +128,32 @@ body {
 
 #about .about-text {
     color: white;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 700;
     word-wrap: break-word;
     margin-top: 50px;
+    font-family: Bebas Neue;
+    font-size: 84px;
+    font-weight: 400;
+
+
 }
 
 #about .about-resonance {
-    color: #E33A19;
-    font-size: 40px;
-    font-family: Poppins;
-    font-weight: 700;
-    line-height: 48.13px;
+    background: linear-gradient(to right, rgba(255, 111, 154, 1), rgba(255, 110, 153, 1), rgba(227, 58, 25, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 46px;
+    font-weight: 400;
 }
 
 #about .about-num {
-    color: #E33A19;
-    font-size: 100px;
-    font-family: Poppins;
-    font-weight: 700;
-    line-height: 48.13px;
-    margin: 30px 0;
+    background: linear-gradient(to right, rgba(255, 111, 154, 1), rgba(255, 110, 153, 1), rgba(227, 58, 25, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    /* margin: 30px 0; */
+    font-family: Bebas Neue;
+    font-size: 120px;
+    font-weight: 400;
 }
 
 #about .about-btn {
@@ -178,13 +182,13 @@ body {
     padding: 7px 30px;
 }
 
-#about #about-rugistar:hover{
+#about #about-rugistar:hover {
     background-color: #E33A19;
     border: 1px solid #E33A19;
     color: #fff;
 }
 
-#evants .evants{
+#evants .evants {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,26 +196,31 @@ body {
 }
 
 
-#evants .evant-img-text{
+#evants .evant-img-text {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#evants img{
-    width: 160px;
-    height: 160px;
+
+#evants img {
+    width: 129px;
+    height: 133px;
     border-radius: 25px;
 }
-.card{
+
+.card {
     margin-bottom: 30px;
 }
+
 #evants p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
     width: 170px;
 }
-#evants .details-btn{
+
+#evants .details-btn {
     background-color: #000;
     color: #E33A19;
     border: 1px solid red;
@@ -220,7 +229,7 @@ body {
     margin-bottom: 13px;
 }
 
-#evants .regiser-btn{
+#evants .regiser-btn {
     background-color: #E33A19;
     color: #fff;
     font-size: 15px;
@@ -228,26 +237,31 @@ body {
     font-weight: 600;
 }
 
-#evants .regiser-btn:hover{
+#evants .regiser-btn:hover {
     color: blueviolet;
 }
 
-#evants .see-more-btn{
+#evants .see-more-btn {
     background-color: #000;
     color: #E33A19;
     border: 1px solid red;
     font-size: 15px;
     padding: 5px 33px;
     margin-bottom: 13px;
-    
+
 }
 
-#evants .see-more-btn:hover{
+#evants .see-more-btn:hover {
     background-color: #E33A19;
     color: #000;
 }
 
-#evants .see-more{
+#evants .see-more {
+    display: flex;
+    justify-content: center;
+}
+
+#evants .see-more .see-btn {
     display: flex;
     justify-content: center;
 }
@@ -257,83 +271,91 @@ body {
     justify-content: center;
     padding-top: 30px;
 }
-#gallery .gallery-img img{
+
+#gallery .gallery-img img {
     width: 600px;
 }
-#gallery .gallery-btn{
+
+#gallery .gallery-btn {
     background-color: #000;
     color: #E33A19;
     border: 1px solid E33A19;
     font-size: 15px;
     padding: 5px 33px;
     margin-bottom: 13px;
-    
+
 }
 
-#sponsors{
+#sponsors {
     padding: 50px 0;
 }
 
-#sponsors .sponsors h2{
+#sponsors .sponsors h2 {
     background-color: #fff;
     font-size: 30px;
     font-weight: 700;
     display: flex;
     justify-content: center;
-    padding: 22px 20px; 
+    padding: 22px 20px;
 }
-#sponsors .sponsors p{
+
+#sponsors .sponsors p {
     color: #E33A19;
     font-size: 20px;
 }
 
-#footer-top{
+#footer-top {
     padding-bottom: 20px;
 }
 
-#footer-top .row{
+#footer-top .row {
     display: flex;
     justify-content: space-between;
 }
-#footer-top .phone h2{
+
+#footer-top .phone h2 {
     color: #fff;
     font-size: 25px;
     font-weight: 700;
 }
 
-#footer-top .phone p{
+#footer-top .phone p {
     color: #E33A19;
     font-size: 25px;
     font-weight: 600;
 }
 
-#footer-top .email h2{
+#footer-top .email h2 {
     color: #fff;
     font-size: 25px;
     font-weight: 700;
     padding-top: 20px;
 }
 
-#footer-top .email p{
+#footer-top .email p {
     color: #E33A19;
     font-size: 25px;
     font-weight: 600;
 }
-#footer-top .touch h2{
+
+#footer-top .touch h2 {
     color: #fff;
     font-size: 25px;
     font-weight: 700;
     padding-bottom: 15px;
 }
-#footer-top .input-group .form-control{
+
+#footer-top .input-group .form-control {
     border-radius: 0px;
 }
-#footer-top .input-group input{
+
+#footer-top .input-group input {
     color: #000;
     font-weight: 600;
     font-size: 20px;
 }
-#footer-top .input-group span{
+
+#footer-top .input-group span {
     background-color: #E33A19;
     border: 0px solid;
     border-radius: 0px;
@@ -343,33 +365,39 @@ body {
     padding-bottom: 10px;
     padding: 20px 10;
 }
-#footer-top .touch .icon i{
+
+#footer-top .touch .icon i {
     background-color: #E33A19;
     padding: 8px;
     font-size: 30px;
     margin-right: 10px;
+    color: #fff;
 }
 
-.footer-buttom{
+.footer-buttom {
     background-color: #E33A19;
     /* padding: 10px; */
 }
-.footer-buttom .copyright p{
+
+.footer-buttom .copyright p {
     color: #fff;
     font-size: 15px;
-    padding-top: 10px ; 
+    padding-top: 10px;
 }
-.footer-buttom .copyright p span{
+
+.footer-buttom .copyright p span {
     font-weight: 600;
 }
-.footer-buttom .Terms p{
+
+.footer-buttom .Terms p {
     color: #000;
     font-size: 15px;
-    padding-top: 10px ; 
+    padding-top: 10px;
     display: flex;
     justify-content: flex-end;
     font-weight: 500;
 }
+
 @media (max-width: 990px) {
     .navbar {
         position: sticky !important;
@@ -377,6 +405,14 @@ body {
 
     .navbar-nav .nav-link.active {
         color: var(--background-color) !important;
+    }
+}
+
+@media (max-width: 760px) {
+    .evants .evant-btn {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
     }
 }
 
