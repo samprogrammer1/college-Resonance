@@ -162,6 +162,13 @@ body {
     margin-right: 20px;
 }
 
+#about .about-btn:hover {
+    background-color: #E33A19;
+    border: 1px solid #E33A19;
+    color: #000;
+    font-weight: 600;
+}
+
 #about #about-rugistar {
     background-color: #fff;
     border: 1px solid #fff;
@@ -170,6 +177,13 @@ body {
     font-weight: 600;
     padding: 7px 30px;
 }
+
+#about #about-rugistar:hover{
+    background-color: #E33A19;
+    border: 1px solid #E33A19;
+    color: #fff;
+}
+
 #evants .evants{
     display: flex;
     justify-content: space-between;
@@ -188,6 +202,9 @@ body {
     height: 160px;
     border-radius: 25px;
 }
+.card{
+    margin-bottom: 30px;
+}
 #evants p {
     color: #fff;
     font-size: 20px;
@@ -203,12 +220,16 @@ body {
     margin-bottom: 13px;
 }
 
-#evants  .regiser-btn{
+#evants .regiser-btn{
     background-color: #E33A19;
     color: #fff;
     font-size: 15px;
     padding: 5px 30px;
     font-weight: 600;
+}
+
+#evants .regiser-btn:hover{
+    color: blueviolet;
 }
 
 #evants .see-more-btn{
@@ -220,6 +241,12 @@ body {
     margin-bottom: 13px;
     
 }
+
+#evants .see-more-btn:hover{
+    background-color: #E33A19;
+    color: #000;
+}
+
 #evants .see-more{
     display: flex;
     justify-content: center;
@@ -236,13 +263,113 @@ body {
 #gallery .gallery-btn{
     background-color: #000;
     color: #E33A19;
-    border: 1px solid red;
+    border: 1px solid E33A19;
     font-size: 15px;
     padding: 5px 33px;
     margin-bottom: 13px;
     
 }
 
+#sponsors{
+    padding: 50px 0;
+}
+
+#sponsors .sponsors h2{
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 22px 20px; 
+}
+#sponsors .sponsors p{
+    color: #E33A19;
+    font-size: 20px;
+}
+
+#footer-top{
+    padding-bottom: 20px;
+}
+
+#footer-top .row{
+    display: flex;
+    justify-content: space-between;
+}
+#footer-top .phone h2{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#footer-top .phone p{
+    color: #E33A19;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#footer-top .email h2{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+#footer-top .email p{
+    color: #E33A19;
+    font-size: 25px;
+    font-weight: 600;
+}
+#footer-top .touch h2{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+#footer-top .input-group .form-control{
+    border-radius: 0px;
+}
+#footer-top .input-group input{
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+#footer-top .input-group span{
+    background-color: #E33A19;
+    border: 0px solid;
+    border-radius: 0px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding: 20px 10;
+}
+#footer-top .touch .icon i{
+    background-color: #E33A19;
+    padding: 8px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.footer-buttom{
+    background-color: #E33A19;
+    /* padding: 10px; */
+}
+.footer-buttom .copyright p{
+    color: #fff;
+    font-size: 15px;
+    padding-top: 10px ; 
+}
+.footer-buttom .copyright p span{
+    font-weight: 600;
+}
+.footer-buttom .Terms p{
+    color: #000;
+    font-size: 15px;
+    padding-top: 10px ; 
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+}
 @media (max-width: 990px) {
     .navbar {
         position: sticky !important;
@@ -267,6 +394,8 @@ body {
         font-size: 10px;
     }
 }
+
+
 
 @media only screen and (max-width: 700px) {
     #about .about-text {
