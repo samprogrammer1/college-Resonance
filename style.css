@@ -57,10 +57,12 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--main-color) !important;
+    /* color: var(--main-color) !important; */
     font-size: 17px;
     font-family: Poppins;
     font-weight: 700;
+    /* margin-bottom: -1px; */
+    border-bottom: 0.96px solid rgba(236, 50, 50, 1)
 }
 
 .home-page-content {
@@ -122,6 +124,20 @@ body {
     word-wrap: break-word
 }
 
+#timer .timer-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#timer .timer-btn .ticket-btn {
+    padding: 15px 25px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid;
+    margin-top: 40px;
+}
+
 #about {
     margin-top: 80px;
 }
@@ -138,7 +154,7 @@ body {
 }
 
 #about .about-resonance {
-    background: linear-gradient(to right, rgba(255, 111, 154, 1), rgba(255, 110, 153, 1), rgba(227, 58, 25, 1));
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Bebas Neue', sans-serif;
@@ -147,7 +163,7 @@ body {
 }
 
 #about .about-num {
-    background: linear-gradient(to right, rgba(255, 111, 154, 1), rgba(255, 110, 153, 1), rgba(227, 58, 25, 1));
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     color: transparent;
     /* margin: 30px 0; */
@@ -164,12 +180,13 @@ body {
     font-weight: 600;
     padding: 5px 30px;
     margin-right: 20px;
+    transition: 0.5s;
 }
 
 #about .about-btn:hover {
     background-color: #E33A19;
     border: 1px solid #E33A19;
-    color: #000;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -180,12 +197,37 @@ body {
     font-size: 12px;
     font-weight: 600;
     padding: 7px 30px;
+    transition: 0.5s;
 }
 
 #about #about-rugistar:hover {
     background-color: #E33A19;
     border: 1px solid #E33A19;
     color: #fff;
+}
+
+#resonance {
+    padding: 40px 0;
+}
+
+#resonance .day {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(18, 18, 18, 0.8);
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    font-size: 18px;
+    color: var(--white-color);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+#evants {
+    padding: 40px 0;
 }
 
 #evants .evants {
@@ -220,21 +262,30 @@ body {
     width: 170px;
 }
 
+.evants .evant-btn {
+    padding-top: 10px;
+}
+
 #evants .details-btn {
     background-color: #000;
     color: #E33A19;
     border: 1px solid red;
     font-size: 15px;
     padding: 5px 33px;
-    margin-bottom: 13px;
+    margin: 15px 0;
+
 }
 
+
 #evants .regiser-btn {
-    background-color: #E33A19;
+    background: linear-gradient(270deg, #E33A19 52.96%, #FF6F9A 100%);
+
     color: #fff;
     font-size: 15px;
     padding: 5px 30px;
     font-weight: 600;
+    border: none;
+    transition: 0.5s;
 }
 
 #evants .regiser-btn:hover {
@@ -244,16 +295,17 @@ body {
 #evants .see-more-btn {
     background-color: #000;
     color: #E33A19;
-    border: 1px solid red;
+    border: 1px solid rgba(236, 50, 50, 1);
     font-size: 15px;
     padding: 5px 33px;
     margin-bottom: 13px;
+    transition: 0.5s;
 
 }
 
 #evants .see-more-btn:hover {
-    background-color: #E33A19;
-    color: #000;
+    background-color: rgba(236, 50, 50, 1);
+    color: #fff;
 }
 
 #evants .see-more {
@@ -264,6 +316,10 @@ body {
 #evants .see-more .see-btn {
     display: flex;
     justify-content: center;
+}
+
+#gallery {
+    padding: 40px 0;
 }
 
 #gallery .container {
@@ -278,16 +334,28 @@ body {
 
 #gallery .gallery-btn {
     background-color: #000;
-    color: #E33A19;
+    color: rgba(236, 50, 50, 1);
     border: 1px solid E33A19;
     font-size: 15px;
     padding: 5px 33px;
     margin-bottom: 13px;
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
 
 }
 
+#gallery .gallery-btn:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.gallery-see-more {
+    display: flex;
+    justify-content: center;
+}
+
 #sponsors {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 #sponsors .sponsors h2 {
@@ -300,7 +368,7 @@ body {
 }
 
 #sponsors .sponsors p {
-    color: #E33A19;
+    color: rgba(236, 50, 50, 1);
     font-size: 20px;
 }
 
@@ -320,7 +388,7 @@ body {
 }
 
 #footer-top .phone p {
-    color: #E33A19;
+    color: rgba(236, 50, 50, 1);
     font-size: 25px;
     font-weight: 600;
 }
@@ -333,7 +401,7 @@ body {
 }
 
 #footer-top .email p {
-    color: #E33A19;
+    color: rgba(236, 50, 50, 1);
     font-size: 25px;
     font-weight: 600;
 }
@@ -356,7 +424,7 @@ body {
 }
 
 #footer-top .input-group span {
-    background-color: #E33A19;
+    background-color: rgba(236, 50, 50, 1);
     border: 0px solid;
     border-radius: 0px;
     color: #000;
@@ -367,7 +435,7 @@ body {
 }
 
 #footer-top .touch .icon i {
-    background-color: #E33A19;
+    background-color: rgba(236, 50, 50, 1);
     padding: 8px;
     font-size: 30px;
     margin-right: 10px;
@@ -375,7 +443,8 @@ body {
 }
 
 .footer-buttom {
-    background-color: #E33A19;
+    background-color: rgba(236, 50, 50, 1);
+    ;
     /* padding: 10px; */
 }
 
@@ -397,6 +466,13 @@ body {
     justify-content: flex-end;
     font-weight: 500;
 }
+.footer-buttom .credit{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
 
 @media (max-width: 990px) {
     .navbar {
@@ -414,7 +490,19 @@ body {
         justify-content: space-evenly;
         padding-bottom: 15px;
     }
+
+    .evants .evant-btn {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #evants .details-btn {
+        margin: 0;
+    }
+
 }
+
 
 @media (max-width: 520px) {
     .titleHead {
